@@ -1,46 +1,45 @@
 //create an array of words for user to guess
-const words = ['monkey', 'phone', 'mouse', 'pencil', 'backpack']
+var words = ['monkey', 'phone', 'mouse', 'pencil', 'backpack'];
 //choose word randomly
-var word = Math.floor(Math.random() * words.length);
-let chword = words[word];
-console.log(chword);
+var word = words[Math.floor(Math.random() * words.length)];
+
 //create underscores based on length of word
 var underScore =[];
 var wordCorr = [];
-var lettWrong = 12;
+var lettWrong = [12,11,10,9,8,7,6,5,3,2,1];
+var lettGuess = "";
 
 //let docUnderScore = document.getElementsByClassName('underscores');
 //let docwordCorr = document.getElementsByClassName('');
-document.onkey = function(event)
+/*document.onkey = function(event)
 {
 	var key =event.key;
-};
+}*/
 var underGen = () =>
 {
-	for(var i=0; i<chword.length; i++)
+	for(var i=0; i<word.length; i++)
 	{
 		underScore.push('_');
 	}
 };
+
 document.onkeyup = function(event)
 {
 	var letter = event.key;
-	var hasLetter = chword.indexOf(letter) > -1;
+	var hasLetter = word.indexOf(letter) > -1;
 	var letter = document.getElementById("under");
-	letter.textContent = event.key;
-	if (letter === hasLetter)
+	lettGuess = lettGuess + event.key;
+	letter.textContent = lettGuess;
+
+	if (lettGuess.length === word.length);
 	{
-		for(var count=0; count<= chword.length; count ++)
-		{
-		words.join(letter);
-		alert("you win");
-		}
-	};
-for(var counter=0; lettWrong <lettWrong; counter++)
-	{
-		alert("game over");
+	alert("you win");
 	}
-}
+	/*if(event.key != chword.indexOf(letter) > -1;
+	{
+	var lettWrong = document.getElementById("rem");
+}*/
+};
 
 
 
