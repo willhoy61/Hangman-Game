@@ -7,7 +7,7 @@ console.log(chword);
 //create underscores based on length of word
 var underScore =[];
 var wordCorr = [];
-var lettWrong = ['_','_','_','_','_','_','_','_','_','_','_'];
+var lettWrong = 12;
 
 //let docUnderScore = document.getElementsByClassName('underscores');
 //let docwordCorr = document.getElementsByClassName('');
@@ -30,16 +30,17 @@ document.onkeyup = function(event)
 	letter.textContent = event.key;
 	if (letter === hasLetter)
 	{
-	words.join(letter);
-	}
-	else{
-		lettWrong.join(letter);
-	}
-for(var letter=0; letter <lettWrong.length; letter++)
+		for(var count=0; count<= chword.length; count ++)
+		{
+		words.join(letter);
+		alert("you win");
+		}
+	};
+for(var counter=0; lettWrong <lettWrong; counter++)
 	{
 		alert("game over");
 	}
-};
+}
 
 
 
