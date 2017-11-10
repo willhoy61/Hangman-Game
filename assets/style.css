@@ -1,0 +1,51 @@
+.container
+{
+width: 960px;
+text-align: center;
+margin: 20px auto;
+padding: 20px;
+border: 10px solid blue;
+}
+header
+{
+height: 150px;
+text-align: center;
+margin: 20px auto;
+padding: 20px;
+}
+h2
+{
+height: 70px;
+text-align: center;
+margin: 20px auto;
+padding: 20px;
+}
+h3
+{
+height: 50px;
+text-align: center;
+margin: 20px auto;
+padding: 20px;
+}
+.underscores
+{
+height: 50px;
+text-align: center;
+margin: 20px auto;
+padding: 20px;
+}
+.rem
+{
+height: 50px;
+text-align: center;
+margin: 20px auto;
+padding: 20px;
+font-weight: 30px;
+}
+.guessed
+{
+height: 50px;
+text-align: center;
+margin: 20px auto;
+padding: 20px;	
+}
