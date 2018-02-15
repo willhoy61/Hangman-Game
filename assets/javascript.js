@@ -126,6 +126,7 @@ function roundComplete() {
 
     // Update the win counter in the HTML & restart the game.
     document.getElementById("win-counter").innerHTML = winCounter;
+    
     startGame();
   }
 
